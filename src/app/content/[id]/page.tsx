@@ -10,10 +10,6 @@ interface User {
   title: string;
   body: string;
 }
-  
-// interface UserDetailProps {
-//   user: User;
-// }
 
 const DetailContent = () => {
     const [post, setPost] = useState<any>({})

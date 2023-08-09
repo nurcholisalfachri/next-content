@@ -10,10 +10,6 @@ interface Post {
     value: string;
 }
 
-// interface BlogPost {
-//     datas: Post[]
-//   }
-
 const Content = () => {
     const [datas, setDatas] = useState<any>([])
     const [userSelect, setUserSelect] = useState<any>("")

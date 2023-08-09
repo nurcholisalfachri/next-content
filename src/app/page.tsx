@@ -9,7 +9,7 @@ export async function getDogData() {
 
 const Home = async () => {
 
-  const [dog] = await Promise.all([
+  const [dog] = await Promise.all<any>([
     getDogData()
   ])
 
