@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        345: '345px',
+        200: '200px',
         999: 'calc(100% - 15%)',
       }
     },
