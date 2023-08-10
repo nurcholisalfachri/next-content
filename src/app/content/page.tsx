@@ -49,7 +49,9 @@ const Content = () => {
     return (
         <div className="App">
             {
-                !userSelect ? <button className='text-white p-2 my-5 mx-auto border border-solid border-gray-600 rounded-md bg-gray-500 cursor-not-allowed flex lg:my-5 lg:mx-345' disabled={!userSelect} onClick={handleSubmit}>{isShow ? "Show All Contents" : "Show Selected Content"}</button> : <button className='bg-blue-500 hover:bg-blue-700 text-white p-2 my-5 mx-auto border border-solid border-blue-500 rounded-md cursor-pointer flex lg:my-5 lg:mx-345' onClick={handleSubmit}>{isShow ? "Show All Contents" : "Show Selected Content"}</button>
+                !userSelect ? 
+                <button className='text-white p-2 my-5 border border-solid border-gray-600 rounded-md bg-gray-500 cursor-not-allowed flex mx-auto lg:my-5' disabled={!userSelect} onClick={handleSubmit}>{isShow ? "Show All Contents" : "Show Selected Content"}</button> : 
+                <button className='bg-blue-500 hover:bg-blue-700 text-white p-2 my-5 mx-auto border border-solid border-blue-500 rounded-md cursor-pointer flex lg:my-5' onClick={handleSubmit}>{isShow ? "Show All Contents" : "Show Selected Content"}</button>
             }
             <Select className='mb-11 text-center' placeholder='Search or select a title content' options={datas} onChange={(event:any) => handleChange(event)}></Select>
             {
